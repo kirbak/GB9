@@ -1,0 +1,509 @@
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Городская больница №9</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+<header class="header">
+	<div class="header__inner">
+		<a href="/" class="header__logo">
+			<img src="app/img/logo.png" alt="">
+		</a>
+
+		<a href="tel:+7-812-409-20-58" class="header__phone">
+			+7 (812) 409-20-58
+		</a>
+
+		<a href="" class="header__request">Запись на прием</a>
+
+		<a href="" class="header__eye  js-vision-menu">
+			<img src="app/img/icon-eye.png" alt="">
+		</a>
+
+		<div class="header__btn js-btn-menu"></div>
+	</div>
+	<div class="header__inner">
+		<div class="header__menu">
+			<ul class="menu">
+				<li class="menu__parent">
+					<a href="" class="menu__link">О больнице</a>
+					<ul class="submenu  menu__submenu">
+						<li><a href="" class="submenu__link">Администрация</a></li>
+						<li><a href="" class="submenu__link">Нормативные документы и лицензия</a></li>
+						<li><a href="" class="submenu__link">Вышестоящие и контролирующие органы</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="" class="menu__link">О больнице</a>
+				</li>
+				<li>
+					<a href="" class="menu__link">О больнице</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<section class="page-header__mobile-menu mobile-menu js-box-closed">
+	<div class="mobile-menu__wrapper">
+		<button class="mobile-menu__btn mobile-menu__btn-close js-btn-close" type="button">
+			<span class="hidden">Закрыть меню</span>
+			<svg width="25" height="25">
+				<use xlink:href="#menu-close"></use>
+			</svg>
+		</button>
+		<div class="mobile-menu__menu">
+			<ul class="mobile-menu__list"><li class="mobile-menu__item testParent">
+				<a class="mobile-menu__link js-tab" href="/about" title="О больнице">
+					О больнице                        </a>
+			</li><li class="mobile-menu__item testParent">
+				<a class="mobile-menu__link js-tab" href="/otdeleniya" title="Отделения">
+					Отделения                        </a>
+			</li><li class="mobile-menu__item testParent">
+				<a class="mobile-menu__link js-tab" href="/poliklinika" title="Поликлиника">
+					Поликлиника                        </a>
+			</li><li class="mobile-menu__item">
+				<a class="mobile-menu__link" href="/platnye-uslugi" title="Платные услуги">
+					Платные услуги                        </a>
+			</li><li class="mobile-menu__item testParent">
+				<a class="mobile-menu__link js-tab" href="/pacientam" title="Пациентам">
+					Пациентам                        </a>
+			</li><li class="mobile-menu__item testParent">
+				<a class="mobile-menu__link js-tab" href="/specialistam" title="Специалистам">
+					Специалистам                        </a>
+			</li><li class="mobile-menu__item">
+				<a class="mobile-menu__link" href="/contacts" title="Контакты">
+					Контакты                        </a>
+			</li></ul>
+
+			<!-- 						<button class="mobile-menu__btn mobile-menu__btn-search">
+							<span class="hidden">Поиск по сайту</span>
+							<svg width="29" height="29">
+							<use xlink:href="#search"></use>
+							</svg>
+						</button> -->
+			<ul class="mobile-menu__user-list">
+				<li class="mobile-menu__user-item">
+					<a class="mobile-menu__user-link" target="_blank" href="https://vk.com">vkontakte</a>
+				</li>
+				<li class="mobile-menu__user-item">
+					<a class="mobile-menu__user-link" href="tel:+78124092058">+7(812)409-20-58</a>
+				</li>
+			</ul>
+		</div>
+		<div class="mobile-menu__sub-menu js-box-closed">
+			<button class="mobile-menu__btn mobile-menu__btn-back js-btn-back">
+				<span class="hidden">Вернуться к меню</span>
+				<svg width="24" height="24">
+					<use xlink:href="#arrow-back"></use>
+				</svg>
+			</button>
+
+			<ul class="mobile-menu__sub-list"><div class="js-box"><h2 class="mobile-menu__title"><a href="/about">О больнице</a></h2><ul class="mobile-menu__sub-list"><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/about/hirurgiya" title="Администрация">
+					Администрация                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/about/normativnye-dokumenty-i-licenziya" title="Нормативные документы и лицензия">
+					Нормативные документы и лицензия                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/about/vyshestoyaschie-i-kontroliruyuschie-organy" title="Вышестоящие и контролирующие органы">
+					Вышестоящие и контролирующие органы                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/about/istoriya-gorodskoj-bolnicy" title="История городской больницы">
+					История городской больницы                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/about/struktura-i-organy-upravleniya" title="Структура и органы управления">
+					Структура и органы управления                        </a>
+			</li></ul></div><div class="js-box"><h2 class="mobile-menu__title"><a href="/otdeleniya">Отделения</a></h2><ul class="mobile-menu__sub-list"><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/otdeleniya/ambulatorno-konsultativnoe-otdelenie" title="Амбулаторно-консультативное отделение">
+					Амбулаторно-консультативное отделение                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/otdeleniya/ginekologicheskoe-otdelenie" title="Гинекологическое отделение">
+					Гинекологическое отделение                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/otdeleniya/koloproktologicheskoe-otdelenie-no1" title="Колопроктологическое отделение №1">
+					Колопроктологическое отделение №1                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/otdeleniya/koloproktologicheskoe-otdelenie-no2-(gnojnaya-hirurgiya)" title="Колопроктологическое отделение №2 (Гнойная хирургия)">
+					Колопроктологическое отделение №2 (Гнойная хирургия)                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/otdeleniya/koloproktologicheskoe-otdelenie-no3" title="Колопроктологическое отделение №3">
+					Колопроктологическое отделение №3                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/otdeleniya/hirurgicheskoe-otdelenie" title="Хирургическое отделение">
+					Хирургическое отделение                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/otdeleniya/otdelenie-reanimacii-i-intensivnoj-terapii" title="Отделение реанимации и интенсивной терапии">
+					Отделение реанимации и интенсивной терапии                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/otdeleniya/rentgenologicheskoe-otdelenie" title="Отделение лучевой диагностики">
+					Отделение лучевой диагностики                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/otdeleniya/endoskopicheskoe-otdelenie" title="Эндоскопическое отделение">
+					Эндоскопическое отделение                        </a>
+			</li></ul></div><div class="js-box"><h2 class="mobile-menu__title"><a href="/poliklinika">Поликлиника</a></h2><ul class="mobile-menu__sub-list"><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/poliklinika/zapis-na-priem" title="Запись на прием">
+					Запись на прием                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/poliklinika/stomatologicheskij-kabinet" title="Стоматологический кабинет">
+					Стоматологический кабинет                        </a>
+			</li></ul></div><div class="js-box"><h2 class="mobile-menu__title"><a href="/pacientam">Пациентам</a></h2><ul class="mobile-menu__sub-list"><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/aktualnaya-informaciya-dlya-pacientov-i-rodstvennikov" title="Актуальная информация">
+					Актуальная информация                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/zapis-na-priem" title="Запись на прием">
+					Запись на прием                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/pravila-organizacii-peredach-bolnym" title="Правила организации передач больным">
+					Правила организации передач больным                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/besedy-rodstvennikov-pacientov-s-lechaschim-vrachom" title="Беседы родственников пациентов с лечащим врачом">
+					Беседы родственников пациентов с лечащим врачом                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/poryadok-gospitalizacii-pacientov" title="Порядок госпитализации пациентов">
+					Порядок госпитализации пациентов                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/aktualnaya-informaciya-o-koronaviruse" title="Правила предоставления медицинской информации">
+					Правила предоставления медицинской информации                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/obyazatelnoe-medicinskoe-strahovanie/-lekarstvennoe-obespechenie" title="Обязательное медицинское страхование/ Лекарственное обеспечение">
+					Обязательное медицинское страхование/ Лекарственное обеспечение                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/perechen-lekarstvennyh-preparatov" title="Перечень лекарственных препаратов">
+					Перечень лекарственных препаратов                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/dostupnaya-sreda" title="Доступная среда">
+					Доступная среда                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/nezavisimaya-ocenka-kachestva" title="Независимая оценка качества">
+					Независимая оценка качества                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/strahovye-kompanii" title="Страховые компании">
+					Страховые компании                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/pacientam/shema-podgotovki-k-kolonoskopii" title="Схема подготовки к колоноскопии">
+					Схема подготовки к колоноскопии                        </a>
+			</li></ul></div><div class="js-box"><h2 class="mobile-menu__title"><a href="/specialistam">Специалистам</a></h2><ul class="mobile-menu__sub-list"><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/specialistam/nauchnye-publikacii-stati" title="Научные публикации, статьи">
+					Научные публикации, статьи                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/specialistam/vakansii" title="Вакансии">
+					Вакансии                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/specialistam/celevaya-ordinatura" title="Целевая ординатура">
+					Целевая ординатура                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/specialistam/kafedra" title="Кафедра">
+					Кафедра                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/specialistam/pervichnaya-organizaciya-profsoyuza" title="Первичная организация Профсоюза">
+					Первичная организация Профсоюза                        </a>
+			</li><li class="mobile-menu__sub-item">
+				<a class="mobile-menu__sub-link js-tab" href="/specialistam/news" title="Новости">
+					Новости                        </a>
+			</li></ul></div></ul>		</div>
+	</div>
+</section>
+
+<main class="wrapper">
+	<section class="main-banner">
+		<div class="main-banner__inner">
+			<div class="main-banner__title">
+				<span>78 лет</span>
+				на страже здоровья жителей
+				Санкт-Петербурга
+			</div>
+		</div>
+	</section>
+
+	<section class="main-about">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="title">О клинике</div>
+					<div class="main-about__title">С 1944 года</div>
+					<div class="main-about__subtitle">
+						Городская больница №9
+						оказывает хирургическую помощь
+						жителям города Санкт-Петербурга
+					</div>
+					<a href="" class="main-about__btn">Подробнее</a>
+				</div>
+				<div class="main-about__permanent  permanent">
+					<div class="permanent__title">24/7</div>
+					<div class="permanent__subtitle">Работаем 7 дней в неделю,
+						24 часа в сутки
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="main-info">
+		<div class="container">
+			<div class="title">
+				Прием пациентов ведут врачи высшей и первой категории
+			</div>
+		</div>
+	</section>
+
+	<section class="main-information">
+		<div class="container">
+			<div class="row">
+				<a href="" class="main-information__item">
+					<img class="main-information__item-pic" src="app/img/pic-info.png" alt="">
+					<div class="main-information__item-title">
+						Актуальная информация для пациентов и родственников
+					</div>
+					<div class="main-information__item-btn">Подробнее</div>
+				</a>
+				<a href="" class="main-information__item">
+					<img class="main-information__item-pic" src="app/img/pic-info2.png" alt="">
+					<div class="main-information__item-title">
+						Правила организации передачи больным
+					</div>
+					<div class="main-information__item-btn">Подробнее</div>
+				</a>
+				<a href="" class="main-information__item">
+					<img class="main-information__item-pic" src="app/img/pic-info3.png" alt="">
+					<div class="main-information__item-title">
+						Порядок госпитализации пациентов
+					</div>
+					<div class="main-information__item-btn">Подробнее</div>
+				</a>
+				<a href="" class="main-information__item">
+					<img class="main-information__item-pic" src="app/img/pic-info4.png" alt="">
+					<div class="main-information__item-title">
+						Платные услуги
+					</div>
+					<div class="main-information__item-btn">Подробнее</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="main-direction">
+		<div class="container">
+			<div class="title">
+				Направление медицинской помощи
+			</div>
+			<div class="row">
+				<a href="" class="main-direction__item">
+					<span>Хирургия</span>
+				</a>
+				<a href="" class="main-direction__item">
+					<span>Плановая колопроктология</span>
+				</a>
+				<a href="" class="main-direction__item">
+					<span>Гинекология</span>
+				</a>
+				<a href="" class="main-direction__item">
+					<span>Амбулаторно-поликлиническая помощь</span>
+				</a>
+				<a href="" class="main-direction__item">
+					<span>Экстренная проктология</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="main-department  container  swiper">
+		<div class="swiper-wrapper">
+			<div class="department  swiper-slide">
+				<div class="row">
+					<div class="col">
+						<div class="department__label">отделение</div>
+						<div class="department__title">
+							Амбулаторно-консультативное
+							отделение
+						</div>
+						<a href="" class="department__btn">Подробнее</a>
+					</div>
+					<img src="app/img/pic-direction.jpeg" alt="" class="department__pic">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="main-news">
+		<div class="container">
+			<div class="title">Новости</div>
+			<a class="news-item">
+				<img src="app/img/pic-news.png" alt="" class="news-item__pic">
+				<div class="news-item__info">
+					<div class="news-item__date">
+						31 августа 2022
+					</div>
+					<div class="news-item__title">
+						Появился стандарт медпомощи
+						при хроническом панкреатите
+					</div>
+				</div>
+				<span class="news-item__btn">Подробнее</span>
+			</a>
+			<a class="news-item">
+				<img src="app/img/pic-news2.jpeg" alt="" class="news-item__pic">
+				<div class="news-item__info">
+					<div class="news-item__date">
+						31 августа 2022
+					</div>
+					<div class="news-item__title">
+						Зарегистрировали первую назальную вакцину от COVID-19
+					</div>
+				</div>
+				<span class="news-item__btn">Подробнее</span>
+			</a>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<a class="footer__logo" href="/">
+				<img src="app/img/logo.png" alt="">
+			</a>
+			<nav class="contacts">
+				<a href="" class="contacts__address">
+					197110, г. Санкт-Петербург,<br>
+					Крестовский проспект, д.18
+				</a>
+				<a href="tel:+7-812-409-20-58" class="contacts__phone">
+					+7 (812) 409-20-58
+				</a>
+				<a href="" class="contacts__vk"></a>
+				<a href="" class="contacts__request">
+					Запись на прием
+				</a>
+			</nav>
+		</div>
+
+		<nav class="footer__menu">
+			<a href="">О больнице</a>
+			<a href="">Отделения</a>
+			<a href="">Поликлиника</a>
+			<a href="">Платные услуги</a>
+			<a href="">Пациентам</a>
+			<a href="">Специалисты</a>
+			<a href="">Контакты</a>
+		</nav>
+
+		<nav class="footer__copyright  copyright">
+			<span class="copyright__name">
+				© Санкт-Петербургское государственное
+				бюджетное учреждение здравоохранения
+				«Городская больница №9», 2022
+			</span>
+			<a href="">Политика конфиденциальности</a>
+			<a href="">Карта сайта</a>
+			<a href="" class="copyright__top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"></a>
+		</nav>
+	</div>
+</footer>
+
+<div class="vision  js-vision-closed">
+	<button class="mobile-menu__btn mobile-menu__btn-close js-btn-close" type="button">
+		<span class="hidden">Закрыть меню</span>
+		<svg width="25" height="25">
+			<use xlink:href="#menu-close"></use>
+		</svg>
+	</button>
+	<form class="vision__nav">
+		<div class="vision__item">
+			<label for="blackTheme" class="checkbox checkbox_ib">
+				<input type="checkbox" id="blackTheme" class="checkbox" hidden="" data-theme="black">
+				<span>Черно-белая версия</span>
+			</label>
+		</div>
+		<div class="vision__item">
+			<label for="no-pictures" class="checkbox checkbox_ib">
+				<input type="checkbox" id="no-pictures" class="checkbox" hidden="" data-theme="no-pictures">
+				<span>Отключить картинки</span>
+			</label>
+		</div>
+		<div class="vision__item">
+			<h4 class="vision__title">Размер шрифта</h4>
+			<label for="font_default" class="radiobtn radiobtn--block">
+				<input type="radio" id="font_default" name="font" class="radio" checked="" hidden="" data-theme="font_default">
+				<span>Обычный шрифт</span>
+			</label>
+			<label for="font_1" class="radiobtn radiobtn--block">
+				<input type="radio" id="font_1" name="font" class="radio" hidden="" data-theme="font_middle">
+				<span>Увеличенный шрифт 1.5</span>
+			</label>
+			<label for="font_2" class="radiobtn radiobtn--block">
+				<input type="radio" id="font_2" name="font" class="radio" hidden="" data-theme="font_big">
+				<span>Увеличенный шрифт 2</span>
+			</label>
+		</div>
+		<div class="vision__item">
+			<h4 class="vision__title">
+				Интервал между буквами (кернинг):
+			</h4>
+			<label for="letter_1" class="radiobtn radiobtn--block">
+				<input type="radio" id="letter_1" name="letter" class="radio" checked="" hidden="" data-theme="letter_default">
+				<span>Обычный</span>
+			</label>
+			<label for="letter_2" class="radiobtn radiobtn--block">
+				<input type="radio" id="letter_2" name="letter" class="radio" hidden="" data-theme="letter_middle">
+				<span>Большой</span>
+			</label>
+			<label for="letter_3" class="radiobtn radiobtn--block">
+				<input type="radio" id="letter_3" name="letter" class="radio" hidden="" data-theme="letter_big">
+				<span>Очень большой</span>
+			</label>
+		</div>
+	</form>
+</div>
+<div class="overlay"></div>
+
+<div id='js-show-iframe-wrapper'>
+	<div class='pos-banner-fluid bf-2'>
+
+		<div class='bf-2__decor'>
+			<div class='bf-2__logo-wrap'>
+				<img
+						class='bf-2__logo'
+						src='https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo.svg'
+						alt='Госуслуги'
+				/>
+				<div class='bf-2__slogan'>Решаем вместе</div>
+			</div>
+		</div>
+		<div class='bf-2__content'>
+
+			<div class='bf-2__description'>
+          <span class='bf-2__text'>
+            Не убран снег, яма на дороге, не горит фонарь?
+          </span>
+				<span class='bf-2__text bf-2__text_small'>
+            Столкнулись с проблемой&nbsp;— сообщите о ней!
+          </span>
+			</div>
+
+			<div class='bf-2__btn-wrap'>
+				<!-- pos-banner-btn_2 не удалять; другие классы не добавлять -->
+				<button
+						class='pos-banner-btn_2'
+						type='button'
+				>Сообщить о проблеме
+				</button>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+<script src='https://pos.gosuslugi.ru/bin/script.min.js'></script>
+<script src="dist/script.js"></script>
+<script>Widget('https://pos.gosuslugi.ru/form', 231546);</script>
+</body>
+</html>

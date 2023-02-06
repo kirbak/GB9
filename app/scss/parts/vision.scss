@@ -1,0 +1,483 @@
+.vision {
+    display: none;
+}
+
+@media (min-width: $base-width) {
+    .vision {
+        display: block;
+        position: fixed;
+        height: 100vh;
+        background: #fff;
+        width: 320px;
+        top: 0;
+        right: 0;
+        z-index: 51;
+        padding: 50px 40px;
+        box-shadow: 0 0 50px 50px rgba(0,0,0,0.2);
+        transform: translateX(0);
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        overflow-y: auto
+    }
+
+    .vision.js-vision-closed {
+        transform: translateX(440px);
+        visibility: hidden
+    }
+
+    .vision .radiobtn--block {
+        display: block
+    }
+
+    .vision__title {
+        margin: 10px 0 20px 0;
+        font-size: 16px;
+        letter-spacing: normal;
+        line-height: 1.06;
+        color: #958f8b
+    }
+
+    .vision__nav {
+        padding-top: 50px;
+        background: #fff
+    }
+
+    .letter_default {
+        letter-spacing: normal
+    }
+
+    .letter_middle {
+        letter-spacing: .6px
+    }
+
+    .letter_big {
+        letter-spacing: 1.2px
+    }
+
+    .no-pictures img {
+        display: none !important
+    }
+
+    .no-pictures video {
+        display: none !important
+    }
+
+    .no-pictures .yt-video iframe {
+        display: none !important
+    }
+
+    .no-pictures * {
+        background-image: none !important
+    }
+
+    .black * {
+        background-color: #000 !important;
+        color: #fff !important;
+        border-color: #fff !important
+    }
+
+    .black *::before,.black *::after {
+        border-color: #fff !important
+    }
+
+    .black .page-article__btn,.black .page-article__btn * {
+        color: #fff !important
+    }
+
+    .black .page-article__buttons div,.black .page-article__buttons div * {
+        color: #fff !important;
+        background-color: transparent !important
+    }
+
+    .black .vision,.black .vision *:not(.vision__title) {
+        background-color: #fff !important;
+        color: #000 !important
+    }
+
+    .black .vision__title {
+        color: #958f8b !important;
+        background-color: transparent !important
+    }
+
+    .black .page-header *:not(.page-header__overlay) {
+        background-color: #fff !important;
+        color: #000 !important
+    }
+
+    .black .page-header *:not(.page-header__overlay) svg {
+        fill: #000 !important
+    }
+
+    .black .page-header .page-header__header,.black .page-header .page-header__header * {
+        background-color: transparent !important;
+        color: #fff !important
+    }
+
+    .black .page-header .page-header__bg {
+        background-color: transparent !important
+    }
+
+    .black .modal,.black .modal * {
+        background-color: #fff !important;
+        color: #000 !important
+    }
+
+    .black .page-header__header,.black .page-header__header * {
+        background-color: transparent !important;
+        color: #000 !important
+    }
+
+    .black .page-about,.black .page-about * {
+        background-color: transparent !important
+    }
+
+    .black .page-about__hospital-item {
+        z-index: 1
+    }
+
+    .black .card-news {
+        z-index: 1
+    }
+
+    .black .card-news * {
+        background-color: transparent !important;
+        color: #fff !important
+    }
+
+    .black .custom-form__input::-webkit-input-placeholder {
+        color: #fff !important
+    }
+
+    .black .custom-form__input:-ms-input-placeholder {
+        color: #fff !important
+    }
+
+    .black .custom-form__input::-ms-input-placeholder {
+        color: #fff !important
+    }
+
+    .black .custom-form__input::placeholder {
+        color: #fff !important
+    }
+
+    .black .file::before {
+        background-color: #fff !important
+    }
+
+    .black .page-text__info::before {
+        background-color: #fff !important
+    }
+
+    .black .page-clinic__doc-link,.black .page-clinic__doc-link * {
+        background-color: #fff !important;
+        color: #000 !important
+    }
+
+    .black .page-clinic__jobs-wrapper,.black .page-clinic__jobs-wrapper * {
+        background-color: transparent !important;
+        color: #000 !important
+    }
+
+    .black .page-about__slider,.black .page-about__slider * {
+        background-color: transparent !important;
+        color: #000 !important
+    }
+
+    .black .page-contacts__location,.black .page-contacts__location * {
+        background-color: transparent !important
+    }
+
+    .black.no-pictures .page-header__bg:not(.page-header__bg--main) .page-header__header,.black.no-pictures .page-header__bg:not(.page-header__bg--main) .page-header__header *,.black.no-pictures .page-header__bg:not(.page-header__bg.page-header__bg--none) .page-header__header,.black.no-pictures .page-header__bg:not(.page-header__bg.page-header__bg--none) .page-header__header * {
+        background-color: #000 !important;
+        color: #fff !important
+    }
+
+    .black .page-history__inner,.black .page-history__inner * {
+        background-color: transparent !important;
+        color: #fff !important
+    }
+
+    .black .page-news__press-title,.black .page-news__download,.black .page-news__download *,.black .page-news__contact,.black .page-news__contact * {
+        background-color: transparent !important;
+        color: #fff !important
+    }
+
+    .black .card-department {
+        background-color: transparent !important;
+        color: #fff !important;
+        z-index: 1
+    }
+
+    .black .card-department * {
+        background-color: transparent !important;
+        color: #fff !important
+    }
+
+    .black .promo--robot,.black .promo--robot * {
+        background-color: transparent !important;
+        color: #fff !important
+    }
+
+    .black .doctor-card,.black .doctor-card * {
+        background-color: transparent !important;
+        color: #fff !important
+    }
+
+    .black .doctor-card__bg {
+        z-index: 1
+    }
+
+    .black .doctor-card__text {
+        position: relative;
+        z-index: 2
+    }
+
+    .black .card-procedure {
+        background-color: transparent !important;
+        color: #fff !important;
+        z-index: 1
+    }
+
+    .black .card-procedure * {
+        background-color: transparent !important;
+        color: #fff !important
+    }
+
+    .black .page-news__tab-link {
+        border-color: #fff !important
+    }
+
+    .black .page-footer__logo svg {
+        fill: #fff !important
+    }
+    .font_big.letter_middle .site-menu__link {
+        padding-left: 8px;
+        padding-right: 8px
+    }
+
+    .font_middle.letter_big .site-menu__link {
+        padding-left: 6px;
+        padding-right: 6px
+    }
+
+    .font_big.letter_big .site-menu__link {
+        padding-left: 4px;
+        padding-right: 4px
+    }
+
+    .overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(104,75,75,0.5);
+        z-index: 50;
+        visibility: hidden;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        transition: all .3s ease
+    }
+
+    .overlay--visible {
+        visibility: visible;
+        opacity: .3
+    }
+
+    .black .breadcrumbs {
+        color: #fff !important;
+        border-color: #fff !important
+    }
+
+    .black .breadcrumbs::before {
+        border-color: #fff !important
+    }
+
+    .black.no-pictures .head-doctor-title,.black.no-pictures .head-doctor * {
+        color: #000 !important
+    }
+
+    .black .site-menu__sub-list,.black .site-menu__sub-list * {
+        background-color: transparent !important
+    }
+
+    .black .page-main__service-list,.black .page-main__service-list * {
+        background-color: transparent !important
+    }
+
+    .black .page-main__promo {
+        background-color: #000 !important
+    }
+
+    .black .page-main__promo * {
+        background-color: transparent !important
+    }
+
+    .black .doctor-list,.black .doctor-list * {
+        background-color: transparent !important
+    }
+
+    .black.no-pictures .doctor-list {
+        background-color: #000 !important
+    }
+
+    .black .manager__card-bg {
+        background-color: transparent !important
+    }
+}
+
+.checkbox {
+    display: block;
+    padding-bottom: 20px
+}
+
+.checkbox span {
+    display: block;
+    padding-left: 30px;
+    font-size: 16px;
+    letter-spacing: normal;
+    line-height: 1.12;
+    color: #000
+}
+
+.checkbox span:hover,.checkbox span:focus {
+    text-decoration: underline
+}
+
+.checkbox span:active {
+    opacity: .6
+}
+
+.checkbox [type="checkbox"]:not(:checked),.checkbox [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px
+}
+
+.checkbox [type="checkbox"]:not(:checked)+span,.checkbox [type="checkbox"]:checked+span {
+    position: relative;
+    cursor: pointer
+}
+
+.checkbox [type="checkbox"]:not(:checked)+span:before,.checkbox [type="checkbox"]:checked+span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cbcccd !important;
+    background-color: transparent
+}
+
+.checkbox [type="checkbox"]:not(:checked)+span:after,.checkbox [type="checkbox"]:checked+span:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 20px;
+    height: 18px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    background: url("../img/checkbox.svg") center no-repeat
+}
+
+.checkbox [type="checkbox"]:not(:checked)+span:after {
+    opacity: 0;
+    transform: scale(0)
+}
+
+.checkbox [type="checkbox"]:checked+span:before {
+    background-color: #fff
+}
+
+.checkbox [type="checkbox"]:checked+span:after {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.checkbox.checkbox_ib {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px
+}
+
+.checkbox.checkbox_ib:last-child {
+    margin: 0
+}
+
+.radiobtn {
+    display: block;
+    padding-bottom: 20px
+}
+
+.radiobtn span {
+    display: block;
+    padding-left: 25px;
+    font-size: 15px;
+    letter-spacing: normal;
+    background: #fff;
+    line-height: 1.2;
+    color: #000
+}
+
+.radiobtn span:hover,.radiobtn span:focus {
+    text-decoration: underline
+}
+
+.radiobtn span:active {
+    opacity: .6
+}
+
+.radiobtn [type="radio"]:not(:checked),.radiobtn [type="radio"]:checked {
+    position: absolute;
+    left: -9999px
+}
+
+.radiobtn [type="radio"]:not(:checked)+span,.radiobtn [type="radio"]:checked+span {
+    position: relative;
+    cursor: pointer
+}
+
+.radiobtn [type="radio"]:not(:checked)+span:before,.radiobtn [type="radio"]:checked+span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: solid 1px #cbcccd !important;
+    border-radius: 50%;
+    background-color: transparent
+}
+
+.radiobtn [type="radio"]:not(:checked)+span:after,.radiobtn [type="radio"]:checked+span:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    background-color: #000
+}
+
+.radiobtn [type="radio"]:not(:checked)+span:after {
+    opacity: 0;
+    transform: scale(0)
+}
+
+.radiobtn [type="radio"]:checked+span:after {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.radiobtn.radiobtn_ib {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px
+}
+
+.radiobtn.radiobtn_ib:last-child {
+    margin: 0
+}
