@@ -1176,3 +1176,51 @@ ul[class] {
         font-weight: 700;
     }
 }
+
+.job {
+    padding: 2.5rem 4rem;
+    background: $color-secondary;
+
+    & + & {
+        margin-top: 2.5rem;
+    }
+
+    &__title {
+        color: $color-primary;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__trigger {
+        margin-left: auto;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__content {
+        display: none;
+        margin-top: 2.5rem;
+    }
+
+    &__text {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        color: $color-dark;
+    }
+}
+
+.job-form {
+    &__label {
+        color: rgba(9, 53, 80, 0.4);
+        border-top: 1px solid;
+        text-transform: uppercase;
+    }
+
+    &__field {
+        display: block;
+        background: none;
+        border: none;
+    }
+}
